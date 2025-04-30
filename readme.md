@@ -2,3 +2,5 @@
 ## Classes: define and inherit 
 # Session 3: Modeling
 ## Added more advanced things
+
+## Added docstrings to each method
