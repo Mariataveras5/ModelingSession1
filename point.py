@@ -22,9 +22,17 @@ class Point:
         return f"<{self.x}, {self.y}>"
 
     def __repr__(self):
+        """
+        Magic method that defines the string representation of a point.
+        :return: the point as a string
+        """
         return self.__str__()
 
     def distance_orig(self):
+        """
+        Finds the distance from the point to the origin
+        :return: distance number
+        """
         return (self.x**2 + self.y**2)**0.5
 
     def __gt__(self, other):
@@ -36,6 +44,11 @@ class Point:
         return self.distance_orig() > other.distance_orig()
 
     def __eq__(self, other):
+        """
+        Magic method that defines if a point is equal to another based on the distance to origin
+        :param other: different point
+        :return: returns function True or False
+        """
         return self.distance_orig() == other.distance_orig()
 
 
